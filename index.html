@@ -4,11 +4,72 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>First Programming Assignment</title>
+		<style>
+		/* 
+		 * define a class called "greyMid"
+		 * give it six properties
+		 */
+			.greyMid{
+				text-indent: 5px;
+				font-family:Helvetica;
+		   		font-weight:normal;
+				color:#333333;
+				border:2px solid #333333;
+				border-radius:5px;
+			}
+		/* 
+		 * define a class called "greyDark"
+		 * give it six properties
+		 */
+			.greyDark{
+				text-indent: 5px;
+				font-family:Helvetica;
+				font-weight:bold;
+				color:#555555;
+				border:3px solid #555555;
+				border-radius:5px;
+			}
+			
+		/* 
+		 * define a class called "greyLight"
+		 * give it six properties
+		 */
+			.greyLight{
+				text-indent: 5px;
+				font-family:Helvetica;
+				font-weight:lighter;
+				color:#222222;
+				border:1px dashed #222222;
+				border-radius:5px;
+			}
+		</style>
 	</head>
 	<body>
 		<h1>Mark Rivett-Carnac's First Programming Assignment</h1>
 		<!-- I am adding another header tab -->
 		<h2>More to come.</h2>
+		
+		<!-- Three unique divs with text inside -->
+		<div class="greyDark">Like this.</div>
+		<div class="greyMid">And this.</div>
+		<div class="greyLight">Or this.</div>
+		
+		<script>
+			/*
+			 * defining several variables: the first three are simple, the last two are complex
+			 */
+			var aNumber = 33;
+			var aString = "This is a string.";
+			var aBool = true;
+			var aArray = [1,1,2,3,5]; /* use for list of same things */
+			var aObject = {aKey:"aValue",
+							akey2:"aValue2"}; /* use for list of differnt things that belong together */
+			
+			console.log(aNumber,aArray[0],aObject.aKey);
+			aObject.aKey = "aValue3"; /* can change the variable here because defined above */
+			console.log(aObject.aKey);
+		</script>
+		
 	</body>
 </html>
 
