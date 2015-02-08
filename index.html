@@ -69,8 +69,13 @@
 							myBrother:"James"}; /* use for list of differnt things that belong together */
 			
 			console.log(myAge,myName,myGenderMale,myCitiesLived,myFamily.myMother,myFamily.myFather,myFamily.mySister,myFamily.myBrother);
-			aObject.aKey = "aValue3"; /* can change the variable here because defined above */
-			console.log(aObject.aKey);
+			
+			myAge = 26; /* Mistake in first listing, I'm actually 26*/
+			myCitiesLived = ["Camarillo", "Charlotte", "Cleveland", "Colombo", "Cairo", "Singapore", "New York City", "Providence"]; /* Mistake in first listing, forgot Providence */
+			myFamily.myMother = "Janet Elizabeth Logi Rivett-Canac" /*Adding full name */
+			myFamily.myFather = "Andrew Stirling Rivett-Carnac" /*Adding full name */
+			
+			console.log(myAge,myCitiesLived,myFamily.myMother,myFamily.myFather);
 		</script>
 		
 	</body>
